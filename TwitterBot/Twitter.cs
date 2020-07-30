@@ -116,14 +116,18 @@ namespace TwitterBot
                     movieOverview = dataReader.GetString(2);
                     if(movieOverview.Length < 1)
                     {
-                        movieOverviewSubString = "Descripción no disponible";
+                        movieOverviewSubString = "Lo siento, no cuento con la descripción de esta película pero deberías darle una oportunidad!";
+                    }
+                    if(movieOverview.Length < 10)
+                    {
+                        movieOverviewSubString = "Lo siento, no cuento con la descripción de esta película pero deberías darle una oportunidad!";
                     }
                     else
                     {
                         movieOverviewSubString = movieOverview.Substring(0, movieOverview.IndexOf("."));
-                        if(movieOverviewSubString.Length > 200)
+                        if(movieOverviewSubString.Length > 220)
                         {
-                            movieOverviewSubString = "Descripcion no disponible";
+                            movieOverviewSubString = "Lo siento, no cuento con la descripción de esta película pero deberías darle una oportunidad!";
                         }
                     }
                     movieReleaseDate = dataReader.GetString(3);
