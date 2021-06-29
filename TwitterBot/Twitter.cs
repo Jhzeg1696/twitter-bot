@@ -15,7 +15,7 @@ namespace TwitterBot
         private const String oauth_token_secret = "1sMCxQsrbDK2Bh1orajTctbVB80jhAzdpUVL6yJSlEV2b";
         private const String oauth_version = "1.0";
         private const String oauth_signature_method = "HMAC-SHA1";
-        private const String dataBaseInfo = @"server=ticketstalamas.com;userid=tickets20_bot;password=Catastros123;database=tickets20_bot";
+        private const String dataBaseInfo = @"server=ticketstalamas.com;userid=tickets2_admin;password=ticketstalamas01;database=tickets2_bot";
         Mail mail = new Mail("jhzeg1696@mail.com", "Catastros", "jhzeg1696@gmail.com");
         public void Tweet(String movieTitle, String movieOverview, String movieReleaseDate, long imageId)
         {
